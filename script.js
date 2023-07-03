@@ -7,6 +7,7 @@ menuOpen.addEventListener("click", () => {
   overlay.classList.add("overlay--active");
 });
 
+
 menuClose.addEventListener("click", () => {
   overlay.classList.remove("overlay--active");
 });
