@@ -192,7 +192,7 @@ header.sticky .cta {
 .background {
   text-align: center;
   width: 100%;
-  height: 100vh;
+  height: 85vh;
   background: rgba(0, 0, 0, 0.5) url(images/background-img.jpg) no-repeat 50% 50%;
   background-position-y: center ;
   background-size: cover;
@@ -202,6 +202,79 @@ header.sticky .cta {
   align-items: center;
   justify-content:center;
 }
+
+/* Our impact */
+
+#our-impact {
+  height: 258px;
+  background-color: #1C5649;
+}
+
+.green-rect {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+
+.text {
+  color: #ffffff;
+  margin-top: 100px;
+}
+
+.text h1{
+  font-size: 25px;
+}
+
+.text p{
+  margin-top: 15px;
+  font-size: 15.25px;
+  text-decoration: none;
+}
+
+.anchor a {
+  background-color: transparent;
+  color: #fff;
+  font-size: 14px;
+}
+
+.anchor a:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 750px) {
+  #our-impact {
+      height: 350px;
+  }
+
+  .text {
+      margin-top: 2.5rem;
+  }
+
+  .outer-most-6 {
+      display: flex; 
+      flex-direction: column; 
+      align-items: center; 
+  }
+}
+
+/* Our work */
+
+  #our-work {
+    height: 350px;  
+  }
+
+  .title {
+    color: #005A2F;
+    font-size: 67px;
+    font-family: Sahitya;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90px;
+  }
 
 /* Begin Footer */
 
