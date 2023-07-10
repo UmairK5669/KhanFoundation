@@ -22,20 +22,27 @@ const doc = document;
 const menuOpen = doc.querySelector(".menu");
 const menuClose = doc.querySelector(".close");
 const overlay = doc.querySelector(".overlay");
+const buttons = doc.querySelectorAll(".overlay__content a");
 
 menuOpen.addEventListener("click", () => {
   overlay.classList.add("overlay--active");
 });
 
-
 menuClose.addEventListener("click", () => {
   overlay.classList.remove("overlay--active");
 });
+
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    overlay.classList.remove("overlay--active");
+  });
+});
+
 
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
 
 window.addEventListener("scroll", function(){
-const header = document.getElementsByClassName('header-19')[0]
+const header = document.getElementsByClassName('header')[0]
 header.classList.toggle("sticky", window.scrollY > 50)
 })

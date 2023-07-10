@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Sahitya:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: none;
   box-sizing: border-box;
 }
 
@@ -15,6 +17,7 @@ html {
 
 body {
   overflow-x: hidden;
+  background-color: #F3F3F3;
 }
 
 .head {
@@ -35,7 +38,7 @@ header {
   background-color: white;
   position: fixed;
   width: 100%;
-  height: 175px;
+  height: 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -103,7 +106,8 @@ header.sticky .nav__links li a {
 
 .cta {
   padding: 12.5px 29px;
-  background-color: lightgreen;
+  background-color: #1C5649;
+  color: white;
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -299,7 +303,173 @@ header.sticky .cta {
     margin-top: 3vh;
   }
 
-/* Begin Footer */
+/* Get involved section */
+
+#get-involved {
+  height: 515px;
+  background-color: #1C5649;
+  color: #ffffff;
+}
+
+.title-get-involved {
+  padding-left: 1.5em;
+  padding-top: 1em;
+  color: #FFF;
+  font-family: Schoolbell;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90px;
+}
+
+.outer-most-5 {
+  background-color: rgba(0, 0, 0, 0);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+  margin-right: 6rem;
+  margin-left: 6rem;
+}
+
+.outer-rect-4 {
+  margin-top: 4.25rem;
+  color: #ffffff;
+}
+
+.outer-rect-4 i{
+  font-size: 125px;
+}
+
+.outer-rect-4 h1{
+  font-size: 25px;
+}
+
+.detail-9 {
+  padding: 1.75rem;
+}
+
+.outer-rect-4 p{
+  margin-top: 15px;
+  font-size: 15.25px;
+  text-decoration: none;
+}
+
+.detail-3 a {
+  background-color: transparent;
+  color: #fff;
+  font-size: 14px;
+}
+
+.detail-3 a:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  #get-involved {
+      height: 500px;
+  }
+  
+  .heading-9 {
+      padding-left: 2em;
+      padding-top: 2em;
+      font-size: 35px;
+  }
+  
+  .outer-most-5 {
+      margin-right: 4rem;
+      margin-left: 4rem;
+  }
+  
+  .outer-rect-4 {
+      margin-top: 4.25rem;
+      color: #ffffff;
+  }
+  
+  .outer-rect-4 i{
+      font-size: 100px;
+  }
+  
+  .outer-rect-4 h1{
+      font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  #get-involved {
+      height: 850px;
+  }
+  
+  .heading-9 {
+      padding-left: 2.5em;
+      padding-top: 2em;
+      font-size: 30px;
+  }
+  
+  .outer-most-5 {
+      margin-right: 3.5rem;
+      margin-left: 3.5rem;
+      display: block;
+  }
+  
+  .outer-rect-4 {
+      margin-top: 2rem;
+      color: #ffffff;
+  }
+  
+  .outer-rect-4 i{
+      font-size: 80px;
+  }
+  
+  .outer-rect-4 h1{
+      font-size: 22.5px;
+  }
+}
+
+@media screen and (max-width: 366px) {
+  #get-involved {
+      height: 900px;
+  }
+}
+
+/* What we do */
+
+#what-we-do {
+  height: 850px;
+}
+
+#what-we-do h1 {
+  color: #005A2F;
+  text-align: center;
+  font-family: Satisfy;
+  font-size: 95px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90px;
+  margin-top: 60px;
+  margin-bottom: 25px;
+}
+
+#what-we-do p {
+  color: #005E31;
+  text-align: center;
+  font-family: Sanchez;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 67.5px;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  width: 875px;
+  margin: 0 auto; 
+  flex-direction: column;
+}
+
+
+/* Footer */
 
 #footer {
   background-color: #969696;
@@ -338,9 +508,9 @@ header.sticky .cta {
   color: grey;
 }
 
-@media (max-width: 800px){
+@media screen and (max-width: 875px) {
   #footer {
-      height: 100px;
+      height: 270px;
   }
 
   #footer .nav-bar ul {
@@ -349,6 +519,18 @@ header.sticky .cta {
 
   #footer .nav-bar ul li {
       margin-top: 12px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #footer {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 175px) {
+  #footer {
+    height: 325px;
   }
 }
 
@@ -377,9 +559,7 @@ hr.rounded {
   text-decoration: none;
 }
 
-/* End Footer */
-
-/* Begin back to top button */ 
+/* Back to top button */ 
 
 #progress {
   position: fixed;
@@ -433,6 +613,3 @@ hr.rounded {
   }
 }
 
-.check {
-  height: 1000px;
-}
