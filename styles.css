@@ -275,7 +275,7 @@ header.sticky .cta {
       height: 350px;
   }
 
-  .text {
+  .green-rect {
       margin-top: 2.5rem;
   }
 
@@ -468,6 +468,26 @@ header.sticky .cta {
   flex-direction: column;
 }
 
+/* Subscribe */
+
+#subscribe {
+  display: flex;
+  align-items: center;
+  background: #1C5649;
+  height: 365px;
+}
+
+.box {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box h2, p {
+        margin: 10px 0;
+    }
 
 /* Footer */
 
