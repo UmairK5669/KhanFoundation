@@ -289,7 +289,7 @@ header.sticky .cta {
 /* Our work */
 
   #our-work {
-    height: 500px;  
+    height: 900px;  
   }
 
   .title {
@@ -301,8 +301,30 @@ header.sticky .cta {
     line-height: 90px;
     text-align: center;
     margin-top: 3vh;
+    margin-bottom: 3vh;
   }
 
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    grid-gap: 25px;
+  }
+  
+  .image-grid img {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  .image-grid .image-heading {
+    position: absolute;
+    color: #fff;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+  }
 /* Get involved section */
 
 #get-involved {
@@ -479,14 +501,40 @@ header.sticky .cta {
 
 .box {
   width: 50%;
-  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .box-left {
-  justify-content: flex-start;
+  display: flex;
+  flex-direction: column; /* Display the content in a column */
+  justify-content: center; /* Center the content vertically */
+  align-items: center; /* Center the content horizontally */
+  text-align: center; /* Center the text within the div */
+  padding-left: 125px;
+}
+
+.box-left h1 {
+  color: #FFF;
+  font-family: Sahitya;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90px;
+  letter-spacing: 1.5px;
+}
+
+.box-left p {
+  color: #FFF;
+  text-align: center;
+  font-family: Sanchez;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; 
+  letter-spacing: 2px;
+  margin-top: 10px;
 }
 
 .box-right {
@@ -494,28 +542,30 @@ header.sticky .cta {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-right: 125px;
 }
 
 #my-form {
   display: flex;
   align-items: center;
-  width: 480px;
-  height: 80px;
+  width: 500px;
+  height: 85px;
   background-color: #EBEBEB;
   border-radius: 45px;
+  padding: 15px;
 }
 
 #my-form input[type="email"] {
   flex-grow: 1;
   border: none;
   padding: 15px;
-  font-size: 22.5px;
+  font-size: 20px;
   background-color: transparent;
 }
 
 #my-form button {
-  width: 64px;
-  height: 64px;
+  width: 60px;
+  height: 60px;
   background-color: #E88B00;
   border-radius: 50%;
   border: none;
@@ -529,10 +579,10 @@ header.sticky .cta {
   font-size: 19px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 105.263% */
+  line-height: 20px; 
   letter-spacing: 1.33px;
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Transition property */
+  transition: background-color 0.4s ease; 
 }
 
 #my-form button:hover {
@@ -540,29 +590,77 @@ header.sticky .cta {
 }
 
 #my-form .icon-mail {
-  width: 40px;
-  height: 40px;
-  
+  width: 47.5px;
+  height: 47.5px;
+  margin-right: 10px;
 }
 
-#my-form hr {
+.hr-left {
   height: 25px;
   border: none;
   border-left: 1px solid gray;
-  margin: 0 10px;
+  margin-right: 10px;
 }
+
+.hr-right {
+  height: 25px;
+  border: none;
+  border-left: 1px solid gray;
+  margin-right: 10px;
+}
+
 
 #my-form input::placeholder {
   color: #888;
   text-align: center;
   font-family: Sanchez;
-  font-size: 28px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
   letter-spacing: 2px;
+  margin-right: 6px;
+  width: 100%;
 }
 
+@media screen and (max-width:1325px) {
+  .box-right {
+    padding-right: 50px;
+  }
+
+  .box-left {
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width:1150px) {
+  .box-right {
+    padding-right: 20px;
+  }
+
+  .box-left {
+    padding-left: 2px;
+  }
+}
+
+@media screen and (max-width: 1035px) {
+  #subscribe {
+    flex-direction: column;
+    height: 375px;
+  }
+
+  .box {
+    flex-grow: 1;
+  }
+
+  .bottom {
+    padding-bottom: 50px;
+  }
+
+  .top {
+    padding-top: 50px;
+  }
+}
 
 /* Footer */
 
