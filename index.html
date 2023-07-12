@@ -110,17 +110,28 @@
     <!--Newsletter subscribe section-->
 
     <section id="subscribe">
-        <div class="box">
-            <!-- Content for the first div -->
-            <h2>Div 1</h2>
-            <p>This is the content of the first div.</p>
+        <div class="box box-left">
+          <!-- Content for the first div -->
+          <h2>Div 1</h2>
+          <p>This is the content of the first div.</p>
         </div>
-        <div class="box">
+        <div class="box box-right">
             <!-- Content for the second div -->
-            <h2>Div 2</h2>
-            <p>This is the content of the second div.</p>
-        </div>
-    </section>
+            <form action="https://formspree.io/f/mdojkeww" method="POST" id="my-form">
+              <svg class="icon-mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+              <hr>
+              <input type="email" name="email" placeholder="enter your email here" required>
+              <hr>
+              <button id="submit-btn" type="submit">
+                Sign<br>Up
+              </button>
+            </form>
+          </div>
+      </section>
+    
 
     <!--Begin footer-->
 

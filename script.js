@@ -1,4 +1,30 @@
 
+const form = document.getElementById('my-form');
+const submitBtn = document.getElementById('submit-btn');
+
+form.addEventListener('submit', function (event) {
+  event.preventDefault(); // Prevent the default form submission
+
+  // Perform an AJAX request to submit the form
+  const formData = new FormData(form);
+  const xhr = new XMLHttpRequest();
+  xhr.open('POST', form.action, true);
+  xhr.setRequestHeader('Accept', 'application/json');
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === XMLHttpRequest.DONE) {
+      if (xhr.status === 200) {
+        // Success: Do something (e.g., show a success message)
+        console.log('Form submitted successfully');
+        form.reset();
+      } else {
+        // Error: Do something (e.g., show an error message)
+        console.error('Form submission error');
+      }
+    }
+  };
+  xhr.send(formData);
+});
+
 let calcScrollValue = () => {
   let scrollProgress = document.getElementById("progress");
   let progressValue = document.getElementById("progress-value");

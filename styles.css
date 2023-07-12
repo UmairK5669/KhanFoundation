@@ -485,9 +485,84 @@ header.sticky .cta {
   align-items: center;
 }
 
-.box h2, p {
-        margin: 10px 0;
-    }
+.box-left {
+  justify-content: flex-start;
+}
+
+.box-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#my-form {
+  display: flex;
+  align-items: center;
+  width: 480px;
+  height: 80px;
+  background-color: #EBEBEB;
+  border-radius: 45px;
+}
+
+#my-form input[type="email"] {
+  flex-grow: 1;
+  border: none;
+  padding: 15px;
+  font-size: 22.5px;
+  background-color: transparent;
+}
+
+#my-form button {
+  width: 64px;
+  height: 64px;
+  background-color: #E88B00;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  text-align: center;
+  font-family: Sanchez;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 105.263% */
+  letter-spacing: 1.33px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transition property */
+}
+
+#my-form button:hover {
+  background-color: #9a5d00;
+}
+
+#my-form .icon-mail {
+  width: 40px;
+  height: 40px;
+  
+}
+
+#my-form hr {
+  height: 25px;
+  border: none;
+  border-left: 1px solid gray;
+  margin: 0 10px;
+}
+
+#my-form input::placeholder {
+  color: #888;
+  text-align: center;
+  font-family: Sanchez;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+}
+
 
 /* Footer */
 
