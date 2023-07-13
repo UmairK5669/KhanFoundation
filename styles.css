@@ -792,26 +792,32 @@ button[type="submit"]:hover{
   letter-spacing: 0.27px;
 }
 
-@media screen and (max-width:1350px) {
+@media screen and (max-width:1250px) {
   #contact {
-      height: 650px;
+      height: 600px;
   }
 }
 
-@media screen and (max-width:1075px) {
+@media screen and (max-width:1210px) {
   #contact {
-      height: 750px;
+      height: 575px;
+  }
+
+  .text-contact {
+    width: 35%;
   }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1040px){
 
   #contact {
-      height: 900px;
+      height: 1000px;
   }
   
-  #contact h1 {
-      font-size: 70px;
+  .text-contact {
+    width: 60%;
+    margin-right: 0;
+    margin-bottom: 35px;
   }
 
   .container {
@@ -821,13 +827,6 @@ button[type="submit"]:hover{
       justify-content: center;
       text-align: left;
   }
-
-  .text {
-      width: 100%;
-      align-items: center;
-      justify-content: center;
-      text-align: center; 
-  } 
 
   .form-group {
       width: 95%;
@@ -845,24 +844,57 @@ button[type="submit"]:hover{
   }
 }
 
-@media screen and (max-width: 815px){
-
-  #contact {
-      height: 1000px;
-  }
-}
-
-@media screen and (max-width: 500px){
-
+@media screen and (max-width: 615px){
   #contact {
       height: 1100px;
   }
 }
 
-@media screen and (max-width: 365px){
-
+@media screen and (max-width: 605px){
   #contact {
-      height: 1150px;
+    height: 1215px;
+  }
+
+  .text-contact h2 {
+    font-size: 50px;
+  }
+
+  .text-contact {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 535px){
+  #contact {
+      height: 1250px;
+  }
+
+  .text-contact {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 495px) {
+  .text-contact {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .text-contact {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 285px) {
+  #contact {
+    height: 1350px;
+  }
+}
+
+@media screen and (max-width: 260px) {
+  #contact {
+    height: 1500px;
   }
 }
 
