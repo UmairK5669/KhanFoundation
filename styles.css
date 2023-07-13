@@ -272,17 +272,17 @@ header.sticky .cta {
 
 @media screen and (max-width: 750px) {
   #our-impact {
-      height: 350px;
+      height: 475px;
   }
 
   .green-rect {
-      margin-top: 2.5rem;
-  }
-
-  .outer-most-6 {
       display: flex; 
       flex-direction: column; 
       align-items: center; 
+  }
+
+  .text {
+    margin-top: 75px;
   }
 }
 
@@ -390,13 +390,13 @@ header.sticky .cta {
 
 @media screen and (max-width: 1000px) {
   #get-involved {
-      height: 500px;
+      height: 475px;
   }
   
-  .heading-9 {
-      padding-left: 2em;
-      padding-top: 2em;
-      font-size: 35px;
+  .title-get-involved {
+      padding-left: 1.5em;
+      padding-top: 1em;
+      font-size: 50px;
   }
   
   .outer-most-5 {
@@ -405,12 +405,12 @@ header.sticky .cta {
   }
   
   .outer-rect-4 {
-      margin-top: 4.25rem;
+      margin-top: 3.5rem;
       color: #ffffff;
   }
   
   .outer-rect-4 i{
-      font-size: 100px;
+      font-size: 90px;
   }
   
   .outer-rect-4 h1{
@@ -420,13 +420,13 @@ header.sticky .cta {
 
 @media screen and (max-width: 840px) {
   #get-involved {
-      height: 850px;
+      height: 875px;
   }
   
-  .heading-9 {
-      padding-left: 2.5em;
-      padding-top: 2em;
-      font-size: 30px;
+  .title-get-involved {
+      padding-left: 1.5em;
+      padding-top: 1em;
+      font-size: 50px;
   }
   
   .outer-most-5 {
@@ -443,16 +443,44 @@ header.sticky .cta {
   .outer-rect-4 i{
       font-size: 80px;
   }
-  
-  .outer-rect-4 h1{
-      font-size: 22.5px;
+}
+
+@media screen and (max-width: 625px) {
+  .title-get-involved {
+    font-size: 45px;
   }
 }
 
-@media screen and (max-width: 366px) {
-  #get-involved {
-      height: 900px;
+@media screen and (max-width: 550px) {
+  .title-get-involved {
+    font-size: 37.5px;
   }
+
+  .outer-rect-4 i{
+    font-size: 70px;
+}
+
+#get-involved {
+  height: 855px;
+}
+
+.detail-9 h1 {
+  font-size: 20px;
+}
+}
+
+@media screen and (max-width: 460px) {
+  #get-involved {
+    height: 825px;
+  }
+
+  .title-get-involved {
+    font-size: 35px;
+  }
+
+  .outer-rect-4 i{
+    font-size: 65px;
+}
 }
 
 /* What we do */
@@ -485,10 +513,87 @@ header.sticky .cta {
   display: flex;
   justify-content: center; 
   align-items: center; 
-  width: 875px;
+  width: 60%;
   margin: 0 auto; 
   flex-direction: column;
 }
+
+@media screen and (max-width:1100px) {
+  #what-we-do {
+    height: 950px;
+  }
+
+  #what-we-do p {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width:1100px) {
+  #what-we-do {
+    height: 1050px;
+  }
+}
+
+@media screen and (max-width:885px) {
+  #what-we-do {
+    height: 1150px;
+  }
+}
+
+@media screen and (max-width:800px) {
+  #what-we-do {
+    height: 1300px;
+  }
+}
+
+@media screen and (max-width:700px) {
+  #what-we-do {
+    height: 1500px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  #what-we-do {
+    height: 1750px;
+  }
+}
+
+@media screen and (max-width:515px) {
+  #what-we-do {
+    height: 2000px;
+  }
+}
+
+@media screen and (max-width:450px) {
+  #what-we-do {
+    height: 2300px;
+  }
+}
+
+@media screen and (max-width:415px) {
+  #what-we-do {
+    height: 2600px;
+  }
+}
+
+@media screen and (max-width:375px) {
+  #what-we-do {
+    height: 2900px;
+  }
+}
+
+@media screen and (max-width:345px) {
+  #what-we-do {
+    height: 3100px;
+  }
+}
+
+@media screen and (max-width:320px) {
+  #what-we-do {
+    height: 3300px;
+  }
+}
+
 
 /* Subscribe */
 
