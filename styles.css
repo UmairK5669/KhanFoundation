@@ -662,6 +662,210 @@ header.sticky .cta {
   }
 }
 
+/* Contact */
+
+#contact {
+  height: 550px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.form-group {
+  margin-top: 16px;
+  font-size: 18.5px;
+  width: 50%; /* Occupy right half of the screen */
+}
+
+.form-group label {
+  color: #000;
+  text-align: center;
+  font-family: Sanchez;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; 
+}
+
+.form-group input,
+.form-group textarea {
+  width: 150%;
+  padding: 5px;
+  color: #222;
+  border: none;
+  margin-top: 6px;
+  background-color: #DEDEDE;
+}
+
+.form-group input {
+  font-size: 25px;
+  height: 38px;
+}
+
+.form-group input::placeholder {
+  color: rgba(0, 0, 0, 0.50);
+  font-family: Sanchez;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; 
+}
+
+.form-group textarea::placeholder {
+  color: rgba(0, 0, 0, 0.50);
+  font-family: Sanchez;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; 
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"]{
+  width: 35%;
+  border: 2px solid black;
+  padding: 14px;
+  font-size: 15px;
+  font-family: 'Montserrat';
+  color: #222;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: .3s ease background-color;
+  letter-spacing: 1.5px;
+}
+
+button[type="submit"]:hover{
+  background-color: black;
+  color: white;
+}
+
+#status {
+  z-index: 0;
+  position: relative;
+  width: 100%;
+  font-size: 15px;
+  color: #222;
+  text-align: center;
+  transition: .1s ease background-color;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.text-contact {
+  text-align: center;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  width: 30%; 
+  margin-right: 100px; 
+}
+
+.text-contact h2 {
+  color: #000;
+  text-align: center;
+  font-family: Sanchez;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 85px; /* 121.429% */
+  letter-spacing: 4.9px;
+}
+
+.text-contact p {
+  display: block;
+  margin: 35px 1em 0 1.15em;
+  color: #000;
+  text-align: center;
+  font-family: Sanchez;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 37.5px; 
+  letter-spacing: 0.27px;
+}
+
+@media screen and (max-width:1350px) {
+  #contact {
+      height: 650px;
+  }
+}
+
+@media screen and (max-width:1075px) {
+  #contact {
+      height: 750px;
+  }
+}
+
+@media screen and (max-width: 1000px){
+
+  #contact {
+      height: 900px;
+  }
+  
+  #contact h1 {
+      font-size: 70px;
+  }
+
+  .container {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      text-align: left;
+  }
+
+  .text {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      text-align: center; 
+  } 
+
+  .form-group {
+      width: 95%;
+      margin-left: 10px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+      width: 100%;
+  }
+
+  button {
+      position: relative;
+      margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 815px){
+
+  #contact {
+      height: 1000px;
+  }
+}
+
+@media screen and (max-width: 500px){
+
+  #contact {
+      height: 1100px;
+  }
+}
+
+@media screen and (max-width: 365px){
+
+  #contact {
+      height: 1150px;
+  }
+}
+
 /* Footer */
 
 #footer {
