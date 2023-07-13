@@ -866,6 +866,65 @@ button[type="submit"]:hover{
   }
 }
 
+/* Donate */
+
+#donate {
+  height: 335px;
+  background: #1C5649;
+}
+
+.info {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-donate {
+  color: #FFF;
+  font-family: Sahitya;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90px; 
+  padding-top: 35px;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+.p-donate {
+  color: #DA8300;
+  width: 550px;
+  text-align: center;
+  font-family: Sahitya;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px; 
+  letter-spacing: 0.5px;
+}
+
+.donate-button {
+  margin-top: 25px;
+  background: #D88100;
+  padding: 12px 26px;
+  color: #FFF;
+  text-align: center;
+  font-family: Sahitya;
+  font-size: 37.5px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px; 
+  border: none;
+  letter-spacing: 1.875px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.donate-button:hover {
+  background-color: #9a5d00;
+}
+
 /* Footer */
 
 #footer {
