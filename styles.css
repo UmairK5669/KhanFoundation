@@ -216,8 +216,8 @@ header.sticky .cta {
   line-height: 70px;
   letter-spacing: 2px;
   text-align: left;
-  margin-top: 50vh;
-  margin-left: 12.5vh;
+  margin-top: 52.5vh;
+  margin-left: 8.5%;
 }
 
 .welcome-text span {
@@ -226,6 +226,72 @@ header.sticky .cta {
   letter-spacing: 0px;
   font-style: normal;
   font-family: Sahitya;
+}
+
+@media screen and (max-width: 1250px) {
+  .welcome-text {
+    font-size: 85px;
+    line-height: 60px;
+  }
+
+  .welcome-text span {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .welcome-text {
+    font-size: 75px;
+    line-height: 52.5px;
+  }
+
+  .welcome-text span {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .welcome-text {
+    font-size: 65px;
+    line-height: 46.5px;
+  }
+
+  .welcome-text span {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .welcome-text {
+    font-size: 58.5px;
+    line-height: 45px;
+  }
+
+  .welcome-text span {
+    font-size: 46.5px;
+  }
+}
+
+@media screen and (max-width:345px) {
+  .welcome-text {
+    font-size: 53.5px;
+    line-height: 42.5px;
+  }
+
+  .welcome-text span {
+    font-size: 43.5px;
+  }
+}
+
+@media screen and (max-width:305px) {
+  .welcome-text {
+    font-size: 45px;
+    line-height: 40px;
+  }
+
+  .welcome-text span {
+    font-size: 40px;
+  }
 }
 
 /* Our impact */
@@ -289,7 +355,7 @@ header.sticky .cta {
 /* Our work */
 
   #our-work {
-    height: 900px;  
+    height: 1100px;  
   }
 
   .title {
@@ -513,14 +579,20 @@ header.sticky .cta {
   display: flex;
   justify-content: center; 
   align-items: center; 
-  width: 60%;
+  width: 62.5%;
   margin: 0 auto; 
   flex-direction: column;
 }
 
+@media screen and (max-width:1380px) {
+  #what-we-do {
+    height: 1000px;
+  }
+}
+
 @media screen and (max-width:1100px) {
   #what-we-do {
-    height: 950px;
+    height: 1050px;
   }
 
   #what-we-do p {
@@ -542,13 +614,19 @@ header.sticky .cta {
 
 @media screen and (max-width:800px) {
   #what-we-do {
-    height: 1300px;
+    height: 1250px;
   }
 }
 
 @media screen and (max-width:700px) {
   #what-we-do {
     height: 1500px;
+  }
+}
+
+@media screen and (max-width:620px) {
+  #what-we-do {
+    height: 1750px;
   }
 }
 
@@ -564,7 +642,7 @@ header.sticky .cta {
   }
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:458px) {
   #what-we-do {
     height: 2300px;
   }
@@ -688,6 +766,7 @@ header.sticky .cta {
   letter-spacing: 1.33px;
   cursor: pointer;
   transition: background-color 0.4s ease; 
+  margin-bottom: 8px;
 }
 
 #my-form button:hover {
@@ -751,19 +830,236 @@ header.sticky .cta {
 @media screen and (max-width: 1035px) {
   #subscribe {
     flex-direction: column;
-    height: 375px;
+    height: 300px;
   }
 
   .box {
     flex-grow: 1;
   }
 
-  .bottom {
-    padding-bottom: 50px;
+  .box-left h1 {
+    font-size: 85px;
+  }
+
+  .box-left p {
+    font-size: 25px;
+  }
+
+  #my-form {
+    width: 425px;
+    height: 65px;
+    margin-left: 12px;
   }
 
   .top {
-    padding-top: 50px;
+    margin-top: 15px;
+  }
+
+  .bottom {
+    margin-bottom: 15px;
+  }
+
+  #my-form input::placeholder {
+    font-size: 20px;
+  }
+
+  #my-form input[type="email"] {
+    font-size: 17px;
+  }
+
+  #my-form .icon-mail {
+    width: 37.5px;
+    height: 37.5px;
+    margin-right: 10px;  
+  }
+
+  .hr-left {
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .hr-right {
+    height: 20px;
+    margin-right: 0px;
+  }
+
+  #my-form button {
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
+    line-height: 16px;
+  }
+}
+
+@media screen and (max-width:800px) {
+  
+  .box-left h1 {
+    font-size: 75px;
+  }
+
+  .box-left p {
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width:760px) {
+  #subscribe {
+    height: 270px;
+  }
+
+  .box-left h1 {
+    font-size: 68px;
+  }
+
+  .box-left p {
+    font-size: 20px;
+    margin-top: 0;
+  }
+
+  #my-form {
+    width: 385px;
+    height: 55px;
+  }
+
+  #my-form input::placeholder {
+    font-size: 18px;
+  }
+
+  #my-form input[type="email"] {
+    font-size: 16px;
+  }
+
+  #my-form .icon-mail {
+    width: 34px;
+    height: 34px;
+    margin-right: 10px;  
+  }
+
+  .bottom {
+    padding-bottom: 10px;
+  }
+
+  .hr-left {
+    height: 18px;
+  }
+  
+  .hr-right {
+    height: 18px;
+    margin-right: -5px;
+  }
+
+  #my-form button {
+    width: 43px;
+    height: 43px;
+    font-size: 12px;
+    line-height: 12px; 
+  }
+}
+
+@media screen and (max-width:665px) {
+  #subscribe {
+    height: 285px;
+  }
+
+  .bottom {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 565px) {
+  #subscribe {
+    height: 300px;
+  }
+
+  .box-left h1 {
+    font-size: 50px;
+  }
+
+  .box-left p {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #subscribe {
+    height: 315px;
+  }
+}
+
+@media screen and (max-width:410px) {
+
+  #my-form {
+    width: 345px;
+    height: 50px;
+  }
+
+  #my-form input::placeholder {
+    font-size: 16px;
+  }
+
+  #my-form input[type="email"] {
+    font-size: 14.5px;
+  }
+
+  #my-form .icon-mail {
+    width: 31px;
+    height: 31px;
+    margin-right: 10px;  
+  }
+
+  .box-left p {
+    margin-bottom: 15px;
+  }
+
+  #my-form button {
+    width: 38px;
+    height: 38px;
+    font-size: 10px;
+    line-height: 9px; 
+  }
+}
+
+@media screen and (max-width:370px) {
+
+  #my-form {
+    width: 300px;
+    height: 45px;
+    margin-left: 18px;
+  }
+
+  #my-form input::placeholder {
+    font-size: 12px;
+  }
+
+  #my-form input[type="email"] {
+    font-size: 11px;
+  }
+
+  #my-form .icon-mail {
+    width: 28.5px;
+    height: 28.5px;
+  }
+
+  #my-form button {
+    width: 33.5px;
+    height: 33.5px;
+    font-size: 10px;
+    line-height: 8.25px; 
+  }
+
+  .hr-left {
+    height: 14px;
+  }
+  
+  .hr-right {
+    height: 14px;
+    margin-right: -7px;
+  }
+}
+
+@media screen and (max-width: 305px) {
+  #subscribe {
+    height: 330px;
   }
 }
 
@@ -1031,7 +1327,7 @@ button[type="submit"]:hover{
 
 .p-donate {
   color: #DA8300;
-  width: 550px;
+  width: 37.5%;
   text-align: center;
   font-family: Sahitya;
   font-size: 25px;
@@ -1060,6 +1356,71 @@ button[type="submit"]:hover{
 
 .donate-button:hover {
   background-color: #9a5d00;
+}
+
+@media screen and (max-width:1250px) {
+  .p-donate {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width:1035px) {
+  #donate {
+    height: 355px;
+  }
+}
+
+@media screen and (max-width:730px) {
+  .title-donate {
+    font-size: 65px;
+  }
+
+  .p-donate {
+    font-size: 23px;
+    width: 55%;
+  }
+
+  .donate-button {
+    padding: 10.5px 24px;
+    font-size: 33px;
+  }
+}
+
+@media screen and (max-width: 565px) {
+  #donate {
+    height: 375px;
+  }
+
+  .title-donate {
+    font-size: 60px;
+  }
+
+  .p-donate {
+    font-size: 21px;
+  }
+
+  .donate-button {
+    padding: 9.5px 22px;
+    font-size: 31px;
+  }
+}
+
+@media screen and (max-width:450px) {
+  #donate {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width:385px) {
+  #donate {
+    height: 530px;
+  }
+}
+
+@media screen and (max-width:320px) {
+  #donate {
+    height: 545px;
+  }
 }
 
 /* Footer */
