@@ -355,7 +355,7 @@ header.sticky .cta {
 /* Our work */
 
   #our-work {
-    height: 1100px;  
+    height: 900px;  
   }
 
   .title {
@@ -366,31 +366,110 @@ header.sticky .cta {
     font-weight: 700;
     line-height: 90px;
     text-align: center;
-    margin-top: 3vh;
-    margin-bottom: 3vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
   }
 
   .image-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 300px 300px;
+    grid-gap: 10px;
+    justify-content: center;
     align-items: center;
-    grid-gap: 25px;
-  }
-  
-  .image-grid img {
     height: 300px;
-    object-fit: cover;
+  }
+
+  .image-grid img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   
-  .image-grid .image-heading {
-    position: absolute;
-    color: #fff;
-    font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 5px 10px;
+  @media screen and (max-width:1150px) {
+    #our-work {
+      height: 800px;
+    }
+
+    .title {
+      font-size: 60px;
+    }
+    
+    .image-grid {
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 250px 250px;
+    }
   }
+
+  @media screen and (max-width:975px) {
+    #our-work {
+      height: 625px;
+    }
+
+    .title {
+      font-size: 48px;
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+    }
+
+    .image-grid {
+      grid-template-columns: 300px 300px;
+      grid-template-rows: 200px 200px;
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    #our-work {
+      height: 575px;
+    }
+
+    .title {
+      font-size: 40px;
+      margin-top: 1vh;
+      margin-bottom: 1vh;
+    }
+
+    .image-grid {
+      grid-template-columns: 250px 250px;
+      grid-template-rows: 175px 175px;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    #our-work {
+      height: 500px;
+    }
+
+    .title {
+      font-size: 37.5px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .image-grid {
+      grid-template-columns: 225px 225px;
+      grid-template-rows: 165px 165px;
+    }
+  }
+
+  @media screen and (max-width: 505px) {
+    #our-work {
+      height: 500px;
+    }
+
+    .title {
+      font-size: 37.5px;
+      line-height: 50px;
+      margin-top: 2.5vh;
+      margin-bottom: 2.5vh;
+    }
+
+    .image-grid {
+      grid-template-columns: 225px 225px;
+      grid-template-rows: 165px 165px;
+    }
+  }
+
 /* Get involved section */
 
 #get-involved {
@@ -563,8 +642,8 @@ header.sticky .cta {
   font-style: normal;
   font-weight: 400;
   line-height: 90px;
-  margin-top: 60px;
-  margin-bottom: 25px;
+  margin-top: 7vh;
+  margin-bottom: 3vh;
 }
 
 #what-we-do p {
@@ -606,72 +685,75 @@ header.sticky .cta {
   }
 }
 
-@media screen and (max-width:885px) {
+@media screen and (max-width:880px) {
   #what-we-do {
-    height: 1150px;
+    height: 950px;
+  }
+
+  #what-we-do p {
+    width: 90%;
   }
 }
 
 @media screen and (max-width:800px) {
   #what-we-do {
-    height: 1250px;
+    height: 1050px;
   }
 }
 
 @media screen and (max-width:700px) {
   #what-we-do {
-    height: 1500px;
+    height: 1200px;
   }
 }
 
 @media screen and (max-width:620px) {
   #what-we-do {
-    height: 1750px;
-  }
-}
-
-@media screen and (max-width:600px) {
-  #what-we-do {
-    height: 1750px;
+    height: 1450px;
   }
 }
 
 @media screen and (max-width:515px) {
   #what-we-do {
-    height: 2000px;
+    height: 1600px;
   }
 }
 
-@media screen and (max-width:458px) {
+@media screen and (max-width:470px) {
   #what-we-do {
-    height: 2300px;
+    height: 1850px;
   }
 }
 
 @media screen and (max-width:415px) {
   #what-we-do {
-    height: 2600px;
+    height: 2150px;
   }
 }
 
 @media screen and (max-width:375px) {
   #what-we-do {
-    height: 2900px;
+    height: 2250px;
   }
 }
 
 @media screen and (max-width:345px) {
   #what-we-do {
-    height: 3100px;
+    height: 2500px;
   }
 }
 
 @media screen and (max-width:320px) {
   #what-we-do {
-    height: 3300px;
+    height: 2650px;
   }
 }
 
+@media screen and (max-width:300px) {
+  #what-we-do {
+    height: 3000px;
+  }
+}
 
 /* Subscribe */
 
@@ -1102,6 +1184,7 @@ header.sticky .cta {
   border: none;
   margin-top: 6px;
   background-color: #DEDEDE;
+  border-radius: 10px;
 }
 
 .form-group input {
@@ -1252,9 +1335,6 @@ button[type="submit"]:hover{
 }
 
 @media screen and (max-width: 605px){
-  #contact {
-    height: 1215px;
-  }
 
   .text-contact h2 {
     font-size: 50px;
@@ -1266,9 +1346,6 @@ button[type="submit"]:hover{
 }
 
 @media screen and (max-width: 535px){
-  #contact {
-      height: 1250px;
-  }
 
   .text-contact {
     width: 75%;
@@ -1285,11 +1362,15 @@ button[type="submit"]:hover{
   .text-contact {
     width: 95%;
   }
+
+  #contact {
+    height: 1175px;
+}
 }
 
-@media screen and (max-width: 285px) {
+@media screen and (max-width: 300px) {
   #contact {
-    height: 1350px;
+    height: 1300px;
   }
 }
 
