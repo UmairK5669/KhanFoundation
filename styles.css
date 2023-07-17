@@ -454,7 +454,7 @@ header.sticky .cta {
 
   @media screen and (max-width: 505px) {
     #our-work {
-      height: 500px;
+      height: 1050px;
     }
 
     .title {
@@ -465,8 +465,43 @@ header.sticky .cta {
     }
 
     .image-grid {
-      grid-template-columns: 225px 225px;
-      grid-template-rows: 165px 165px;
+      display: flex;
+      flex-wrap: wrap;
+      height: auto;
+      width: 70%;
+      margin: auto;
+    }
+
+    .image-grid > div {
+      flex-basis: 50%;
+      padding: 10px;
+    }
+  }
+
+  @media screen and (max-width:450px) {
+    #our-work {
+      height: 950px;
+    }
+    
+    .title {
+      font-size: 30px;
+      line-height: 45px;
+    }
+  }
+
+  @media screen and (max-width:350px) {
+    #our-work {
+      height: 850px;
+    }
+    
+    .title {
+      line-height: 40px;
+    }
+  }
+
+  @media screen and (max-width:350px) {
+    #our-work {
+      height: 750px;
     }
   }
 
